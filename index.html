@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TIC TAC TOE</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="resources/icon.png">
+  </head>
+  <body class="onXturn">
+    <header>
+      <h1>
+        <span class="decorative">X</span>TIC TAC TOE<span class="decorative"
+          >O</span
+        >
+      </h1>
+    </header>
+    <span class="playerX">X</span>
+    <span class="playerO hidden">O</span>
+    <div class="container">
+      <div class="field">
+        <div class="cell" id="_00"><span class="textCont"></span></div>
+        <div class="cell" id="_01"><span class="textCont"></span></div>
+        <div class="cell" id="_02"><span class="textCont"></span></div>
+        <div class="cell" id="_10"><span class="textCont"></span></div>
+        <div class="cell" id="_11"><span class="textCont"></span></div>
+        <div class="cell" id="_12"><span class="textCont"></span></div>
+        <div class="cell" id="_20"><span class="textCont"></span></div>
+        <div class="cell" id="_21"><span class="textCont"></span></div>
+        <div class="cell" id="_22"><span class="textCont"></span></div>
+      </div>
+    </div>
+    <script defer src="js/controller.js"></script>
+    <div class="winnerMessage hidden">
+      <span class="winnerSymbol"></span>
+      <h1></h1>
+      <button class="restartButton">Restart!</button>
+    </div>
+    <div class="overlay hidden"></div>
+    <div class="hidden">
+      <audio src="resources/error.mp3"></audio>
+      <audio src="resources/popO.wav"></audio>
+      <audio src="resources/popX.flac"></audio>
+      <audio src="resources/win.wav"></audio>
+      <audio src="resources/draw.wav"></audio>
+    </div>
+  </body>
+</html>
